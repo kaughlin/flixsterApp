@@ -4,6 +4,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.parceler.Parcel;
 
+
 @Parcel // annotation indicates class is Parcelable
 public class Movie {
     // values from API
@@ -13,6 +14,8 @@ public class Movie {
     String posterPath; // only the path
     String backdropPath;
     Double voteAverage;
+    Integer id;
+
 
     // no-arg, empty constructor required for Parceler
     public Movie() {}
@@ -26,7 +29,15 @@ public class Movie {
 
         voteAverage = object.getDouble("vote_average");
 
+
+
+        id = object.getInt("id");
+
+
     }
+
+
+
 
     public String getTitle() {
         return title;
@@ -46,5 +57,9 @@ public class Movie {
 
     public Double getVoteAverage() {
         return voteAverage;
+    }
+
+    public Integer getId() {
+        return id;
     }
 }

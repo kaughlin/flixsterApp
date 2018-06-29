@@ -98,6 +98,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
     public class ViewHolder extends  RecyclerView.ViewHolder implements View.OnClickListener{
 
         // track view objects
+        //@BindView(R.id.ivPosterImage) ImageView ivPosterImage;
+        //@BindView(R.id.ivBackdropImage) ImageView ivBackdropImage;
+        //@BindView(R.id.tvTitle) TextView tvTitle;
+       // @BindView(R.id.tvOverview) TextView tvOverview;
         ImageView ivPosterImage;
         ImageView ivBackdropImage;
         TextView tvTitle;
@@ -105,11 +109,13 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            // lookup view ibjects by id
+             //lookup view ibjects by id
             ivPosterImage = (ImageView) itemView.findViewById(R.id.ivPosterImage);
             ivBackdropImage = (ImageView) itemView.findViewById(R.id.ivBackdropImage);
             tvOverview = (TextView) itemView.findViewById(R.id.tvOverview);
             tvTitle = (TextView) itemView.findViewById(R.id.tvTitle);
+
+            //ButterKnife.bind(this, itemView);
 
             itemView.setOnClickListener(this);
 
@@ -124,7 +130,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                 // get the movie at the position, this won't work if the class is static
                 Movie movie = movies.get(position);
                 // create intent for the new activity
-                Intent intent = new Intent(context, MovieDetailsActivity.class);
+                Intent intent = new Intent(context, MovieTrailerActivity.class);// TODO change to movieDetails activity
                 // serialize the movie using parceler, use its short name as a key
                 intent.putExtra(Movie.class.getSimpleName(), Parcels.wrap(movie));
                 // show the activity
