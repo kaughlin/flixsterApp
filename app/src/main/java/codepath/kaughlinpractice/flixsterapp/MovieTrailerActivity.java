@@ -49,11 +49,6 @@ public class MovieTrailerActivity extends YouTubeBaseActivity {
 
         getTrailer();
 
-
-
-
-
-
     }
 
     private void getTrailer(){
@@ -81,11 +76,11 @@ public class MovieTrailerActivity extends YouTubeBaseActivity {
                             break;
                         }
                     }
-                    Log.i(TAG, String.format("We got this key %s", results.length()));
+                    Log.i(TAG, String.format("this is the key: %s", results.length()));
                     loadTrailer();
 
                 } catch (JSONException e) {
-                    Log.i(TAG,"failed what");
+                    Log.i(TAG,"failed what is going on");
                 }
 
             }
