@@ -24,19 +24,19 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] Centered and aligned text in details activity!
-* [ ] added movie transparent movie picture in details activity!
-* [ ] added scroll bar for overview text!
-* [ ] added toast when trailer opens!
+* [X] Centered and aligned text in details activity!
+* [X] added movie transparent movie picture in details activity!
+* [X] added scroll bar for overview text!
+* [X] added toast when trailer opens!
 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/CHn9waYF11.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with [Recordit](http://recordit.co/).
 
 ## Notes
 
