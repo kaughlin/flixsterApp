@@ -1,4 +1,4 @@
-# Project 2 - *Flixster*
+# Project 2 - *flixster*
 
 **flixsterApp** shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
@@ -8,45 +8,42 @@ Time spent: **20** hours spent in total
 
 The following **required** functionality is completed:
 
-* [] Virtual refrigerator with virtual cabinet
-* [] Input Ingredients
-* [] Generate Recipes from list of current ingredients
-* [] Favorite Recipes Secition
-* [] allow select for specific ingredients to generate recipes
-
+* [X] User can **scroll through current movies** from the Movie Database API
 
 The following **optional** features are implemented:
 
-* [] filters: Type, Time, Difficulty, Cuisine, Calories
-* [] Shopping List page
-* [] Daily Recipes
-* [] Trending Recipes Section
-* [] Shopping Centers near me section
-* [] login for share fridge(multiple people can add to the same fridge)
-* [] animation when user adds item to the fridge
+* [X] For each movie displayed, user can see the following details:
+  * [X] Title, Poster Image, Overview (Portrait mode)
+  * [X] Title, Backdrop Image, Overview (Landscape mode)
+* [X] Display a nice default [placeholder graphic](https://guides.codepath.com/android/Displaying-Images-with-the-Glide-Library#advanced-usage) for each image during loading
+* [X] Allow user to view details of the movie including ratings and popularity within a separate activity
+* [X] Improved the user interface by experimenting with styling and coloring.
+* [X] Apply rounded corners for the poster or background images using [Glide transformations](https://guides.codepath.com/android/Displaying-Images-with-the-Glide-Library#transformations)
+* [X] Apply the popular [Butterknife annotation library](http://guides.codepath.com/android/Reducing-View-Boilerplate-with-Butterknife) to reduce boilerplate code.
+* [X] Allow video trailers to be played in full-screen using the YouTubePlayerView from the details screen.
 
+The following **additional** features are implemented:
 
-The following **Stretch** features are implemented:
-
-* [] Notifications for what to buy near you
-* [] Recipe recognition
-* [] Barcode Scan to input ingredients
-* [] Social interaction- looking at two fridges and people picking different ingredients
-
+* [X] Centered and aligned text in details activity!
+* [X] added movie transparent movie picture in details activity!
+* [X] added scroll bar for overview text!
+* [X] added toast when trailer opens!
 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='VIDEO GOES HERE' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/CHn9waYF11.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [Recordit](http://recordit.co/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
-*
+* It was very challenging to get the youtube trailer to work !
+* understanding the adapter file and recycler view!
+* implementing butterknife in adapter !
 
 ## Open-source libraries used
 
@@ -55,7 +52,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [2018] [Kaughlin Caver, Avni Prasad, Katherine Arackaparambil]
+    Copyright [2018] [Kaughlin Caver]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -68,3 +65,4 @@ Describe any challenges encountered while building the app.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
